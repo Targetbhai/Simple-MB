@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "simplemotionblur",
+  "version": "${version}",
+  "name": "Simple Motion Blur",
+  "description": "Lightweight camera-based motion blur. Works with Sodium and VulkanMod.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.simplemotionblur.SimpleMotionBlur"],
+    "modmenu": ["com.simplemotionblur.ModMenuIntegration"]
+  },
+  "mixins": ["simplemotionblur.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
